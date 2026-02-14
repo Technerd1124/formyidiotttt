@@ -5,7 +5,7 @@ const loveMessages = [
   "Every moment with you is magical ✨",
   "You are my today and all of my tomorrows 🌹",
   "In you, I found my forever 💍",
-  "My heart beats your name, Amarendra 💕",
+  "My heart beats your name, idiot love u  💕",
 ];
 
 const LoveMessages = () => {

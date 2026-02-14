@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { Heart, Play, Pause, Music } from "lucide-react";
-import photoPlaceholder from "@/assets/photo-placeholder.jpg";
+import photoPlaceholder from "@/assets/gallery-4.jpg";
+import ourSong from "@/assets/tuchahiy.mp3";
 
 const PhotoCard = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -20,7 +21,7 @@ const PhotoCard = () => {
     <div className="relative group">
       {/* Glowing border */}
       <div className="absolute -inset-1 gradient-love rounded-2xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
-      
+
       <div className="relative bg-card rounded-2xl p-6 shadow-2xl border border-love-pink/30 animate-love-letter">
         {/* Photo */}
         <div className="relative w-64 h-72 mx-auto mb-6 rounded-xl overflow-hidden animate-glow">
@@ -34,11 +35,11 @@ const PhotoCard = () => {
 
         {/* Name */}
         <h2 className="text-4xl font-script text-center gradient-love-text mb-2">
-          Amarendra
+          my idiot..
         </h2>
         <p className="text-center text-muted-foreground font-body text-sm mb-6 flex items-center justify-center gap-1">
           <Heart className="w-3 h-3 text-love-red fill-love-red" />
-          My Forever Valentine
+          My Forever Valentine ❤️🫂
           <Heart className="w-3 h-3 text-love-red fill-love-red" />
         </p>
 
@@ -79,7 +80,7 @@ const PhotoCard = () => {
         {/* Audio element - using a royalty free love song */}
         <audio
           ref={audioRef}
-          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          src={ourSong}
           loop
           onEnded={() => setIsPlaying(false)}
         />
