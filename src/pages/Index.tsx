@@ -118,18 +118,9 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="relative py-12 text-center">
-        <div className="flex items-center justify-center gap-2 mb-2">
-          <Heart className="w-4 h-4 text-love-red fill-love-red animate-pulse-heart" />
-          <span className="font-script text-2xl gradient-love-text">Made with love</span>
-          <Heart className="w-4 h-4 text-love-red fill-love-red animate-pulse-heart" />
-        </div>
-        <p className="font-body text-xs text-muted-foreground">Happy Valentine's Day 2026 💕</p>
-      </footer>
     </div>
   );
 };
 
 export default Index;
+

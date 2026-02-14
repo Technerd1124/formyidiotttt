@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Heart, Play, Pause, Music } from "lucide-react";
 import photoPlaceholder from "@/assets/gallery-4.jpg";
 import ourSong from "@/assets/tuchahiy.mp3";
@@ -7,14 +7,29 @@ const PhotoCard = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const tryAutoplay = async () => {
+      try {
+        await audio.play();
+        setIsPlaying(true);
+      } catch {
+        setIsPlaying(false);
+      }
+    };
+
+    void tryAutoplay();
+  }, []);
+
   const togglePlay = () => {
     if (!audioRef.current) return;
     if (isPlaying) {
       audioRef.current.pause();
     } else {
-      audioRef.current.play();
+      void audioRef.current.play();
     }
-    setIsPlaying(!isPlaying);
   };
 
   return (
@@ -82,6 +97,9 @@ const PhotoCard = () => {
           ref={audioRef}
           src={ourSong}
           loop
+          autoPlay
+          onPlay={() => setIsPlaying(true)}
+          onPause={() => setIsPlaying(false)}
           onEnded={() => setIsPlaying(false)}
         />
       </div>

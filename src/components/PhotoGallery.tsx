@@ -34,13 +34,6 @@ const PhotoGallery = () => {
               alt={photo.caption}
               className="w-full h-full object-cover min-h-[200px] md:min-h-[240px] group-hover:scale-110 transition-transform duration-700"
             />
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-love-red/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
-              <div className="flex items-center gap-2">
-                <Heart className="w-4 h-4 text-primary-foreground fill-primary-foreground animate-pulse-heart" />
-                <p className="font-body text-primary-foreground text-sm font-medium">{photo.caption}</p>
-              </div>
-            </div>
           </div>
         ))}
       </div>
