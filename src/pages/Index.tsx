@@ -1,8 +1,9 @@
-import { Heart, Sparkles } from "lucide-react";
+import { Heart, Sparkles, Camera } from "lucide-react";
 import valentineBg from "@/assets/valentine-bg.jpg";
 import FloatingHearts from "@/components/FloatingHearts";
 import PhotoCard from "@/components/PhotoCard";
 import LoveMessages from "@/components/LoveMessages";
+import PhotoGallery from "@/components/PhotoGallery";
 
 const Index = () => {
   return (
@@ -65,6 +66,26 @@ const Index = () => {
             <PhotoCard />
             <LoveMessages />
           </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery Section */}
+      <section className="relative py-20 px-4 bg-gradient-to-b from-background via-love-blush/20 to-background">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Camera className="w-5 h-5 text-love-rose" />
+              <span className="font-body text-xs font-semibold text-muted-foreground tracking-wide uppercase">Our Memories</span>
+              <Camera className="w-5 h-5 text-love-rose" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-script gradient-love-text mb-3">
+              Our Photo Gallery 📸
+            </h2>
+            <p className="font-body text-muted-foreground text-sm">
+              Every picture tells a story of us 💕
+            </p>
+          </div>
+          <PhotoGallery />
         </div>
       </section>
 
