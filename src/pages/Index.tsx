@@ -14,7 +14,7 @@ const Index = () => {
       <section className="relative min-h-screen flex flex-col items-center justify-center px-4">
         {/* Background */}
         <div className="absolute inset-0">
-          <img src={valentineBg} alt="" className="w-full h-full object-cover" />
+          {/* <img src={valentineBg} alt="" className="w-full h-full object-cover" /> */}
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
         </div>
 
@@ -23,25 +23,25 @@ const Index = () => {
           <div className="inline-flex items-center gap-2 bg-secondary/80 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6 border border-love-pink/30">
             <Sparkles className="w-4 h-4 text-love-gold" />
             <span className="text-xs font-body font-semibold text-secondary-foreground tracking-wide uppercase">
-              Valentine's Special
+             DONT EVER TEXT AGAIN 
             </span>
             <Sparkles className="w-4 h-4 text-love-gold" />
           </div>
 
           <h1 className="text-6xl md:text-8xl font-script gradient-love-text text-shadow-love mb-4 animate-gentle-bounce">
-            Happy Valentine's Day
+              HATE U 
           </h1>
           <p className="text-xl md:text-2xl font-script text-love-rose mb-2">
-            To My Dearest
+            
           </p>
           <h2 className="text-5xl md:text-7xl font-script gradient-love-text animate-shimmer">
-            Amarendra
+            
           </h2>
 
           <div className="flex items-center justify-center gap-2 mt-6">
-            <Heart className="w-5 h-5 text-love-red fill-love-red animate-pulse-heart" />
-            <p className="font-body text-muted-foreground text-sm">With all my love, forever & always</p>
-            <Heart className="w-5 h-5 text-love-red fill-love-red animate-pulse-heart" style={{ animationDelay: "0.5s" }} />
+            {/* <Heart className="w-5 h-5 text-love-red fill-love-red animate-pulse-heart" /> */}
+            <p className="font-body text-muted-foreground text-sm"> NHI AAUNGI AB</p>
+            {/* <Heart className="w-5 h-5 text-love-red fill-love-red animate-pulse-heart" style={{ animationDelay: "0.5s" }} /> */}
           </div>
         </div>
 

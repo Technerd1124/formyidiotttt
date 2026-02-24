@@ -8,12 +8,12 @@ import gallery5 from "@/assets/gallery11.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
 
 const photos = [
-  { src: gallery1, caption: "Our sunset moments 🌅", span: "col-span-2 row-span-1" },
-  { src: gallery2, caption: "Holding you close 🤝", span: "col-span-1 row-span-2" },
-  { src: gallery3, caption: "Roses for you 🌹", span: "col-span-1 row-span-1" },
-  { src: gallery4, caption: "Rain can't stop us 🌧️", span: "col-span-1 row-span-2" },
-  { src: gallery5, caption: "Our coffee dates ☕", span: "col-span-1 row-span-1" },
-  { src: gallery6, caption: "Dancing under stars ✨", span: "col-span-2 row-span-1" },
+  { src: gallery1, caption: " 🌅", span: "col-span-2 row-span-1" },
+  { src: gallery2, caption: " 🤝", span: "col-span-1 row-span-2" },
+  { src: gallery3, caption: "🌹", span: "col-span-1 row-span-1" },
+  { src: gallery4, caption: " 🌧️", span: "col-span-1 row-span-2" },
+  { src: gallery5, caption: "☕", span: "col-span-1 row-span-1" },
+  { src: gallery6, caption: " ✨", span: "col-span-2 row-span-1" },
 ];
 
 const PhotoGallery = () => {
